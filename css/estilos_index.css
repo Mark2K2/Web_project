@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*---------------------------INDEX.HTML-----------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: whitesmoke;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+header .buscador{ /*propiedades de la barra del buscador*/
+    position: absolute;
+    padding: 5px;
+    left: 20px;
+    top: 20px;
+}
+
+header .buscador input{ /*propiedades del INPUT del buscador*/
+    width: 0px;
+    height: 28px;
+    padding: 0 8px;
+    font-size: 10px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+    left: 10px;
+}
+header .buscador:hover input{
+    width: 120px; /*efecto hover, cuando pones el raton encima*/
+}
+.buscador input:focus{
+    width: 120px; /*cuando clickas, se mantiene estatico para poder buscar*/
+}
+header .btn{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    color: whitesmoke;
+    background: #8A00A5;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+header .logo{
+    text-align: center;
+    margin-top: 20px;
+}
+header .logo h1 a{
+    font-family: "Bebas Neue";
+    color: #8A00A5;
+    cursor:pointer;
+}
+
+body {
+    height:665px;
+    background-image: url(https://www.deadstock.de/wp-content/uploads/2021/12/Jordan-Spring-2022-Deadstock-11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    margin-top: 20px;
+    font-family: "Bebas Neue";
+    color: #8A00A5;
+    font-size:20px;
+    
+}
+
+.navbar .navbar-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    padding-right: 20px;   
+}
+
+.navbar .navbar-ul li { 
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.navbar .navbar-ul li a {
+    display: block;
+    color: #8A00A5;
+    text-align: center;
+    padding: 0 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+    
+.navbar .navbar-ul li a:hover {
+    color: plum;
+}
+
+.dropdown
+{
+    position: absolute;
+    top: 35px;
+    right: 18px;
+    width: fit-content;
+    height: 0;
+    opacity: 0;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    list-style: none;
+    border-radius: 5px;
+
+    transition: all .8s linear;
+}
+
+.dropdown li
+{
+    margin: 5px 0;
+}
+
+.dropdown li a
+{
+    color: #8A00A5;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.dropdown-show:hover .dropdown
+{
+    opacity: 1;
+    height: fit-content;
+}
+/*---------------------------INDEX.HTML-----------------------------*/
